@@ -8,5 +8,5 @@ class PizzaTest(APITestCase):
 
     def test_pizza_list(self):
 
-        response = self.client.get('shop/pizza/')
-        self.assertHTMLEqual(HTTP_200_OK, response.status_code)
+        response = self.client.get('/shop/pizza/')
+        self.assertEqual(HTTP_200_OK, response.status_code)
