@@ -1,0 +1,4 @@
+abir-valg@abirvalg-UX32VD:~/pizza$ . venv/bin/activate
+pip3 install requirements.in
+pip3 install -r requirements.in
+pip3 freeze -r requirements.in > requirements.txt

@@ -1,0 +1,5 @@
+# Production
+Django
+djangorestframework
+# Development
+flake8
