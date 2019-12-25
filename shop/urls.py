@@ -1,7 +1,7 @@
-from .views import pizza_list, pizza_details
-from django.urls import path
+from rest_framework.routers import DefaultRouter
+from .views import PizzaViewSet
 
-urlpatterns = [
-    path('pizza/', pizza_list),
-    path('pizza/<int:pk>', pizza_details),
-]
+router = DefaultRouter()
+router.register('pizza', PizzaViewSet)
+
+urlpatterns = router.urls
