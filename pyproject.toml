@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "pizza"
+version = "0.1.0"
+description = "pizza project. Back end for kitchen."
+authors = ["Liubov Rozhkova <ljybarrr@mail.ru>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+Django = "^3.0.2"
+djangorestframework = "^3.11.0"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.7.9"
+mypy = "^0.761"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
